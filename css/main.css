@@ -1,0 +1,37 @@
+/* ==========================================
+   Style guide
+   ========================================== */
+
+/* ==========================================
+   Basic page elements
+   ========================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { font: 400 100%/1.5 "Noto Sans", sans-serif; }
+
+body {
+  background: #eee;
+  color: #212121;
+  margin: 3rem auto;
+}
+
+/* ==========================================
+   Clearfix
+   ========================================== */
+
+ .container, .row nav {
+   clear: both;
+   *zoom: 1;
+ }
+
+.container:before, .row:before,
+.container:after, .row:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
