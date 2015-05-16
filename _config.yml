@@ -1,0 +1,7 @@
+# Site settings
+title: Media Queries
+description: Media query project
+baseurl: "/media-queries"
+
+# Build settings
+markdown: kramdown
