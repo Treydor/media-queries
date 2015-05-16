@@ -1,5 +1,5 @@
 # Media queries project
-A simple settings page by [Noah Rogers](http://treydor.github.io).
+A project to demonstrate media queries by [Noah Rogers](http://treydor.github.io).
 
 ### Requirements
 * Create a content page with different areas of content and break points.
