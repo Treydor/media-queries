@@ -48,7 +48,10 @@ h1, h2, h3, h4 {
 }
 
 @media screen and (max-width: 600px) {
-  .column { width: 100%; }
+  .column {
+    float: none;
+    width: 100%;
+  }
 }
 
 .overlay {
@@ -93,20 +96,44 @@ h1, h2, h3, h4 {
 }
 
 @media screen and (max-width: 600px) {
-  .description { font-size: 1rem; }
+  .description { font-size: .9rem; }
 }
+
+.description-footer {
+  margin-top: 1rem;
+}
+
+.description-footer a {
+  color: #fff;
+  float: right;
+  font-size: 90%;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.description-footer a:after {
+  color: #ff5744;
+  content: " ➝";
+}
+
+.description a:hover { color: #ccc; }
 
 .overlay:hover .description { display: block; }
 
 .wow {
   background: url("../../assets/images/wow.jpg") no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 10%;
   background-size: cover;
 }
 
 .masseffect {
   background: url("../../assets/images/masseffect.jpg") no-repeat;
-  background-position: 50%;
+  background-position: 0;
   background-size: cover;
 }
 
@@ -124,31 +151,31 @@ h1, h2, h3, h4 {
 
 .gtav {
   background: url("../../assets/images/gta.jpg") no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 0;
   background-size: cover;
 }
 
 .dota {
   background: url("../../assets/images/dota.jpg") no-repeat;
-  background-position: 50% 15%;
+  background-position: 50% 10%;
   background-size: cover;
 }
 
 .siliconvalley {
   background: url("../../assets/images/siliconvalley.jpg") no-repeat;
-  background-position: 50% 10%;
+  background-position: 50% 0;
   background-size: cover;
 }
 
 .h1z1 {
   background: url("../../assets/images/h1z1.jpg") no-repeat;
-  background-position: 50% 15%;
+  background-position: 50% 0;
   background-size: cover;
 }
 
 .dragonage {
   background: url("../../assets/images/dragonage.jpg") no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 0;
   background-size: cover;
 }
 
@@ -156,13 +183,13 @@ h1, h2, h3, h4 {
    Clearfix
    ========================================== */
 
- .container, .row {
+ .container, .row, .description {
    clear: both;
    *zoom: 1;
  }
 
-.container:before, .row:before,
-.container:after, .row:after {
+.container:before, .row:before, .description:before,
+.container:after, .row:after, .description:after {
   clear: both;
   content: " ";
   display: table;
