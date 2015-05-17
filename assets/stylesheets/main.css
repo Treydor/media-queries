@@ -76,55 +76,55 @@ h1, h2, h3, h4 {
 }
 
 .wow {
-  background: url("assets/images/wow.jpg") no-repeat;
+  background: url("../../assets/images/wow.jpg") no-repeat;
   background-position: 50%;
   background-size: cover;
 }
 
 .masseffect {
-  background: url("assets/images/masseffect.jpg") no-repeat;
+  background: url("../../assets/images/masseffect.jpg") no-repeat;
   background-position: 50%;
   background-size: cover;
 }
 
 .starwars {
-  background: url("assets/images/starwars.jpg") no-repeat;
+  background: url("../../assets/images/starwars.jpg") no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
 
 .got {
-  background: url("assets/images/got.jpg") no-repeat;
+  background: url("../../assets/images/got.jpg") no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
 
 .gtav {
-  background: url("/assets/images/gta.jpg") no-repeat;
+  background: url("../../assets/images/gta.jpg") no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
 
 .dota {
-  background: url("/assets/images/dota.jpg") no-repeat;
+  background: url("../../assets/images/dota.jpg") no-repeat;
   background-position: 50%;
   background-size: cover;
 }
 
 .siliconvalley {
-  background: url("/assets/images/siliconvalley.jpg") no-repeat;
+  background: url("../../assets/images/siliconvalley.jpg") no-repeat;
   background-position: 50% 10%;
   background-size: cover;
 }
 
 .h1z1 {
-  background: url("/assets/images/h1z1.jpg") no-repeat;
+  background: url("../../assets/images/h1z1.jpg") no-repeat;
   background-position: 50%;
   background-size: cover;
 }
 
 .dragonage {
-  background: url("/assets/images/dragonage.jpg") no-repeat;
+  background: url("../../assets/images/dragonage.jpg") no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
