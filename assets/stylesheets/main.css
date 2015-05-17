@@ -1,0 +1,146 @@
+/* ==========================================
+   Style guide
+   ========================================== */
+
+/* ==========================================
+   Basic page elements
+   ========================================== */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font: 100%/1.5 "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #555;
+  color: #fff;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================
+   Grid
+   ========================================== */
+
+.row { width: 100%; }
+
+.column {
+  border-left: 1px solid #212121;
+  border-bottom: 1px solid #212121;
+  float: left;
+  height: 250px;
+  width: 33.3%;
+}
+
+.column:last-of-type { border-right: none; }
+
+@media screen and (max-width: 600px) {
+  .column { width: 100%; }
+}
+
+.overlay {
+  background: rgba(0,0,0, 0.3);
+  display: block;
+  height: 250px;
+  width: 100%;
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease;
+}
+
+.overlay:hover { background: none; }
+
+.inner {
+  padding: 1rem;
+}
+
+.item-title {
+  background: #212121;
+  color: #eee;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  padding: .2rem .5rem;
+  text-transform: uppercase;
+}
+
+.wow {
+  background: url("assets/images/wow.jpg") no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.masseffect {
+  background: url("assets/images/masseffect.jpg") no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.starwars {
+  background: url("assets/images/starwars.jpg") no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.got {
+  background: url("assets/images/got.jpg") no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.gtav {
+  background: url("assets/images/gta.jpg") no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.dota {
+  background: url("assets/images/dota.jpg") no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.siliconvalley {
+  background: url("assets/images/siliconvalley.jpg") no-repeat;
+  background-position: 50% 10%;
+  background-size: cover;
+}
+
+.h1z1 {
+  background: url("assets/images/h1z1.jpg") no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.dragonage {
+  background: url("assets/images/dragonage.jpg") no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+/* ==========================================
+   Clearfix
+   ========================================== */
+
+ .container, .row {
+   clear: both;
+   *zoom: 1;
+ }
+
+.container:before, .row:before,
+.container:after, .row:after {
+  clear: both;
+  content: " ";
+  display: table;
+}
