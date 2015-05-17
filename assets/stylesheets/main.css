@@ -61,9 +61,7 @@ h1, h2, h3, h4 {
 
 .overlay:hover { background: none; }
 
-.inner {
-  padding: 1rem;
-}
+.inner { padding: 1rem; }
 
 .item-title {
   background: #212121;
@@ -77,21 +75,14 @@ h1, h2, h3, h4 {
 
 .description {
   background: rgba(0, 0, 0, 0.7);
-  border-radius: 6px;
   color: #fff;
   display: none;
   font-size: .8rem;
   margin-top: 1rem;
   padding: 1rem;
-  -webkit-transition: display .3s ease;
-  -moz-transition: display .3s ease;
-  -o-transition: display .3s ease;
-  transition: display .3s ease;
 }
 
-.overlay:hover .description {
-  display: block;
-}
+.overlay:hover .description { display: block; }
 
 .wow {
   background: url("../../assets/images/wow.jpg") no-repeat;
