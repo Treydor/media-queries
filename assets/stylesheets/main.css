@@ -38,16 +38,27 @@ h1, h2, h3, h4 {
   border-left: 1px solid #212121;
   border-bottom: 1px solid #212121;
   float: left;
-  width: 33.3%;
 }
 
 .column:last-of-type { border-right: none; }
 
-@media screen and (min-width: 601px) {
-  .column { height: 250px; }
+
+
+@media screen and (min-width: 560px) {
+  .column {
+    height: 260px;
+    width: 50%;
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 800px) {
+  .column {
+    height: 260px;
+    width: 33.3%;
+  }
+}
+
+@media screen and (max-width: 559px) {
   .column {
     border-left: none;
     float: none;
@@ -65,13 +76,17 @@ h1, h2, h3, h4 {
   transition: background .3s ease;
 }
 
-@media screen and (min-width: 601px) {
-  .overlay { height: 250px; }
+@media screen and (min-width: 560px) {
+  .overlay { height: 260px; }
 }
 
 .overlay:hover { background: none; }
 
 .inner { padding: 1rem; }
+
+@media screen and (max-width: 559px) {
+  .inner { padding: 2rem 1rem; }
+}
 
 .item-title {
   background: #212121;
@@ -83,10 +98,6 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
-  .inner { padding: 2rem 1rem; }
-}
-
 .description {
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -96,13 +107,11 @@ h1, h2, h3, h4 {
   padding: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 559px) {
   .description { font-size: .9rem; }
 }
 
-.description-footer {
-  margin-top: 1rem;
-}
+.description-footer { margin-top: 1rem; }
 
 .description-footer a {
   color: #fff;
@@ -133,7 +142,7 @@ h1, h2, h3, h4 {
 
 .masseffect {
   background: url("../../assets/images/masseffect.jpg") no-repeat;
-  background-position: 0;
+  background-position: 50% 0;
   background-size: cover;
 }
 
