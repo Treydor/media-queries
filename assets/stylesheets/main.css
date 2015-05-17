@@ -49,6 +49,7 @@ h1, h2, h3, h4 {
 
 @media screen and (max-width: 600px) {
   .column {
+    border-left: none;
     float: none;
     width: 100%;
   }
