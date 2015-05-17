@@ -32,41 +32,39 @@ h1, h2, h3, h4 {
    Grid
    ========================================== */
 
-.row { width: 100%; }
+.wrapper { width: 100%; }
 
-.column {
+.card {
   border-left: 1px solid #212121;
   border-bottom: 1px solid #212121;
   float: left;
 }
 
-.column:last-of-type { border-right: none; }
-
-
+.card:last-of-type { border-right: none; }
 
 @media screen and (min-width: 560px) {
-  .column {
+  .card {
     height: 260px;
     width: 50%;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .column {
+  .card {
     height: 260px;
     width: 33.3%;
   }
 }
 
 @media screen and (max-width: 559px) {
-  .column {
+  .card {
     border-left: none;
     float: none;
     width: 100%;
   }
 }
 
-.overlay {
+.card-overlay {
   background: rgba(0, 0, 0, 0.3);
   display: block;
   width: 100%;
@@ -77,10 +75,10 @@ h1, h2, h3, h4 {
 }
 
 @media screen and (min-width: 560px) {
-  .overlay { height: 260px; }
+  .card-overlay { height: 260px; }
 }
 
-.overlay:hover { background: none; }
+.card-overlay:hover { background: none; }
 
 .inner { padding: 1rem; }
 
@@ -88,7 +86,7 @@ h1, h2, h3, h4 {
   .inner { padding: 2rem 1rem; }
 }
 
-.item-title {
+.inner-title {
   background: #212121;
   color: #eee;
   display: inline-block;
@@ -98,7 +96,7 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
-.description {
+.inner-description {
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
   display: none;
@@ -108,12 +106,14 @@ h1, h2, h3, h4 {
 }
 
 @media screen and (max-width: 559px) {
-  .description { font-size: .9rem; }
+  .inner-description { font-size: .9rem; }
 }
 
-.description-footer { margin-top: 1rem; }
+.card-overlay:hover .inner-description { display: block; }
 
-.description-footer a {
+.inner-footer { margin-top: 1rem; }
+
+.inner-footer a {
   color: #fff;
   font-size: 90%;
   font-weight: 700;
@@ -125,14 +125,12 @@ h1, h2, h3, h4 {
   transition: color .3s ease;
 }
 
-.description a:hover { color: #ffb03b; }
+.inner a:hover { color: #ffb03b; }
 
-.description-footer a:after {
+.inner-footer a:after {
   color: #ffb03b;
   content: " ➝";
 }
-
-.overlay:hover .description { display: block; }
 
 .wow {
   background: url("../../assets/images/wow.jpg") no-repeat;
@@ -192,13 +190,13 @@ h1, h2, h3, h4 {
    Clearfix
    ========================================== */
 
- .container, .row, .description {
+ .container, .card-container, .description {
    clear: both;
    *zoom: 1;
  }
 
-.container:before, .row:before,
-.container:after, .row:after {
+.container:before, .card-container:before,
+.container:after, .card-container:after {
   clear: both;
   content: " ";
   display: table;
