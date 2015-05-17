@@ -38,11 +38,14 @@ h1, h2, h3, h4 {
   border-left: 1px solid #212121;
   border-bottom: 1px solid #212121;
   float: left;
-  height: 250px;
   width: 33.3%;
 }
 
 .column:last-of-type { border-right: none; }
+
+@media screen and (min-width: 601px) {
+  .column { height: 250px; }
+}
 
 @media screen and (max-width: 600px) {
   .column { width: 100%; }
@@ -51,12 +54,15 @@ h1, h2, h3, h4 {
 .overlay {
   background: rgba(0, 0, 0, 0.3);
   display: block;
-  height: 250px;
   width: 100%;
   -webkit-transition: background .3s ease;
   -moz-transition: background .3s ease;
   -o-transition: background .3s ease;
   transition: background .3s ease;
+}
+
+@media screen and (min-width: 601px) {
+  .overlay { height: 250px; }
 }
 
 .overlay:hover { background: none; }
@@ -71,6 +77,10 @@ h1, h2, h3, h4 {
   font-weight: 700;
   padding: .2rem .5rem;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .inner { padding: 2rem 1rem; }
 }
 
 .description {
@@ -90,7 +100,7 @@ h1, h2, h3, h4 {
 
 .wow {
   background: url("../../assets/images/wow.jpg") no-repeat;
-  background-position: 50%;
+  background-position: 50% 20%;
   background-size: cover;
 }
 
@@ -102,7 +112,7 @@ h1, h2, h3, h4 {
 
 .starwars {
   background: url("../../assets/images/starwars.jpg") no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 20%;
   background-size: cover;
 }
 
@@ -114,13 +124,13 @@ h1, h2, h3, h4 {
 
 .gtav {
   background: url("../../assets/images/gta.jpg") no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 10%;
   background-size: cover;
 }
 
 .dota {
   background: url("../../assets/images/dota.jpg") no-repeat;
-  background-position: 50%;
+  background-position: 50% 15%;
   background-size: cover;
 }
 
@@ -132,13 +142,13 @@ h1, h2, h3, h4 {
 
 .h1z1 {
   background: url("../../assets/images/h1z1.jpg") no-repeat;
-  background-position: 50%;
+  background-position: 50% 15%;
   background-size: cover;
 }
 
 .dragonage {
   background: url("../../assets/images/dragonage.jpg") no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 20%;
   background-size: cover;
 }
 
