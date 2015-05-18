@@ -31,10 +31,13 @@ h1, h2, h3, h4 {
 header {
   background: #212121;
   border-bottom: 1px solid #000;
+  padding: 1rem 2rem;
+}
+
+.page-title {
   color: #999;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 1rem 2rem;
 }
 
 .toggle {

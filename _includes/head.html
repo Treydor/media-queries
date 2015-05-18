@@ -6,8 +6,19 @@
   <title>{{ page.title }}</title>
   <meta name="description" content="{{ site.description }}">
 
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
   <link rel="stylesheet" href="assets/stylesheets/normalize.css">
   <link rel="stylesheet" href="assets/stylesheets/main.css">
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <script>
+    $(document).ready(function(){
+        $(".toggle").click(function(){
+            $(".inner-description").toggle();
+        });
+    });
+  </script>
+
 </head>
