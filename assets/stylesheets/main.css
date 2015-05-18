@@ -24,7 +24,7 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
-header { padding: 2rem 1rem; }
+header { padding: 2rem; }
 
 footer {
   margin: 2rem 0;
@@ -35,15 +35,15 @@ footer {
 
 .page-title {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 27px;
   text-transform: uppercase;
 }
 
-.page-title:after {
-  content: "Queries";
+.page-title:before {
   color: #ffb03b;
+  content: "★ ";
 }
 
 .button {
