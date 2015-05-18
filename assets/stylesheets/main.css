@@ -36,8 +36,6 @@ header {
 
 .page-title {
   color: #999;
-  display: block;
-  float: left;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -214,13 +212,13 @@ header {
    Clearfix
    ========================================== */
 
- header, .container, .card-container, .description {
+ .container, .card-container, .description {
    clear: both;
    *zoom: 1;
  }
 
-header:before, .container:before, .card-container:before,
-header:after, .container:after, .card-container:after {
+.container:before, .card-container:before,
+.container:after, .card-container:after {
   clear: both;
   content: " ";
   display: table;
