@@ -82,6 +82,7 @@ header {
 
 @media screen and (min-width: 800px) {
   .card { width: 33.3%; }
+  .card:nth-child(2n) { border-right: 1px solid #000; }
   .card:nth-child(3n) { border-right: 0; }
 }
 
