@@ -28,6 +28,30 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
+header {
+  background: #212121;
+  border-bottom: 1px solid #000;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+
+.toggle {
+  background: #000;
+  border-radius: 12px;
+  color: #555;
+  cursor: pointer;
+  font-size: .7rem;
+  float: right;
+  line-height: 18px;
+  padding: .2rem .5rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* ==========================================
    Grid
    ========================================== */
@@ -35,33 +59,22 @@ h1, h2, h3, h4 {
 .wrapper { width: 100%; }
 
 .card {
-  border-left: 1px solid #212121;
-  border-bottom: 1px solid #212121;
-  float: left;
+  border-bottom: 1px solid #000;
+  float: none;
+  width: 100%
 }
-
-.card:last-of-type { border-right: none; }
 
 @media screen and (min-width: 560px) {
   .card {
+    border-right: 1px solid #000;
+    float: left;
     height: 260px;
     width: 50%;
   }
 }
 
 @media screen and (min-width: 800px) {
-  .card {
-    height: 260px;
-    width: 33.3%;
-  }
-}
-
-@media screen and (max-width: 559px) {
-  .card {
-    border-left: none;
-    float: none;
-    width: 100%;
-  }
+  .card { width: 33.3%; }
 }
 
 .card-overlay {
@@ -72,6 +85,10 @@ h1, h2, h3, h4 {
   -moz-transition: background .3s ease;
   -o-transition: background .3s ease;
   transition: background .3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 @media screen and (min-width: 560px) {
@@ -109,13 +126,13 @@ h1, h2, h3, h4 {
   .inner-description { font-size: .9rem; }
 }
 
-.card-overlay:hover .inner-description { display: block; }
+.card-overlay:target .inner-description { display: block; }
 
 .inner-footer { margin-top: 1rem; }
 
 .inner-footer a {
   color: #fff;
-  font-size: 90%;
+  font-size: .8rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
