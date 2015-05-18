@@ -31,30 +31,42 @@ h1, h2, h3, h4 {
 header {
   background: #212121;
   border-bottom: 1px solid #000;
-  padding: 1rem 2rem;
+  padding: 1.5rem;
 }
 
 .page-title {
-  color: #999;
-  text-transform: uppercase;
+  color: #fff;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-title:after {
+  content: "Queries";
+  color: #ffb03b;
 }
 
 .toggle {
-  background: #000;
-  border-radius: 12px;
-  color: #555;
+  border: 1px solid #444;
+  color: #444;
   cursor: pointer;
   float: right;
-  font-size: .7rem;
+  font-size: .8rem;
   font-weight: 700;
-  line-height: 18px;
-  padding: .2rem 1rem;
+  padding: .2rem .5rem;
   text-transform: uppercase;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: background, color .3s ease;
+  -moz-transition: background, color .3s ease;
+  -o-transition: background, color .3s ease;
+  transition: background, color .3s ease;
+}
+
+.toggle:hover {
+  background: #444;
+  color: #bbb;
 }
 
 /* ==========================================
@@ -73,7 +85,7 @@ header {
   .card {
     border-right: 1px solid #000;
     float: left;
-    height: 260px;
+    height: 250px;
     width: 50%;
   }
   .card:nth-child(2n) { border-right: 0; }
@@ -101,7 +113,7 @@ header {
 }
 
 @media screen and (min-width: 560px) {
-  .card-overlay { height: 260px; }
+  .card-overlay { height: 250px; }
 }
 
 .card-overlay:hover { background: none; }
