@@ -219,7 +219,7 @@ footer {
 
 .gtav {
   background: url("../../assets/images/gta.jpg") no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 10%;
   background-size: cover;
 }
 
@@ -231,13 +231,13 @@ footer {
 
 .siliconvalley {
   background: url("../../assets/images/siliconvalley.jpg") no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 15%;
   background-size: cover;
 }
 
-.h1z1 {
-  background: url("../../assets/images/h1z1.jpg") no-repeat;
-  background-position: 50% 0;
+.gwtdt {
+  background: url("../../assets/images/gwtdt.jpg") no-repeat;
+  background-position: 50% 20%;
   background-size: cover;
 }
 
