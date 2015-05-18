@@ -46,9 +46,11 @@ header {
   color: #555;
   cursor: pointer;
   font-size: .7rem;
+  font-weight: 700;
   float: right;
   line-height: 18px;
   padding: .2rem .5rem;
+  text-transform: uppercase;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
