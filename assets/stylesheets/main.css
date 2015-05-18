@@ -95,7 +95,7 @@ footer {
   .card {
     border-right: 1px solid #000;
     float: left;
-    height: 250px;
+    height: 260px;
     width: 50%;
   }
   .card:nth-child(2n) { border-right: 0; }
@@ -136,7 +136,7 @@ footer {
 }
 
 @media screen and (min-width: 560px) {
-  .card-overlay { height: 250px; }
+  .card-overlay { height: 260px; }
 }
 
 .card-overlay:hover { background: none; }
