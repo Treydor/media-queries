@@ -1,8 +1,4 @@
 /* ==========================================
-   Style guide
-   ========================================== */
-
-/* ==========================================
    Basic page elements
    ========================================== */
 
@@ -105,7 +101,6 @@ footer {
   .card:nth-child(2n) { border-right: 0; }
 }
 
-
 @media screen and (min-width: 800px) {
   .card { width: 33.3%; }
   .card:nth-child(2n) { border-right: 1px solid #000; }
@@ -114,9 +109,16 @@ footer {
 
 @media screen and (min-width: 1300px) {
   .card { width: 25%; }
-  .card:nth-child(2n) { border-right: 1px solid #000; }
+  .card:nth-child(2n),
   .card:nth-child(3n) { border-right: 1px solid #000; }
   .card:nth-child(4n) { border-right: 0; }
+}
+
+@media screen and (min-width: 1600px) {
+  .card { width: 20%; }
+  .card:nth-child(2n), .card:nth-child(3n),
+  .card:nth-child(4n) { border-right: 1px solid #000; }
+  .card:nth-child(5n) { border-right: 0; }
 }
 
 .card-overlay {
