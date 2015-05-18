@@ -36,6 +36,8 @@ header {
 
 .page-title {
   color: #999;
+  display: block;
+  float: left;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -45,11 +47,11 @@ header {
   border-radius: 12px;
   color: #555;
   cursor: pointer;
+  float: right;
   font-size: .7rem;
   font-weight: 700;
-  float: right;
   line-height: 18px;
-  padding: .2rem .5rem;
+  padding: .2rem 1rem;
   text-transform: uppercase;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -212,13 +214,13 @@ header {
    Clearfix
    ========================================== */
 
- .container, .card-container, .description {
+ header, .container, .card-container, .description {
    clear: both;
    *zoom: 1;
  }
 
-.container:before, .card-container:before,
-.container:after, .card-container:after {
+header:before, .container:before, .card-container:before,
+header:after, .container:after, .card-container:after {
   clear: both;
   content: " ";
   display: table;
