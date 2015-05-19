@@ -69,14 +69,22 @@ footer {
   color: #999;
 }
 
+.project-nav {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.show-all, .hide-all {
+  cursor: pointer;
+  float: left;
+  margin-left: .5rem;
+}
+
 .footer-link {
   display: inline-block;
   margin: 0 auto;
-}
-
-.toggle {
-  cursor: pointer;
-  float: right;
 }
 
 /* ==========================================
