@@ -27,7 +27,7 @@ h1, h2, h3, h4 {
 header { padding: 2rem 1rem; }
 
 footer {
-  margin: 3rem 0;
+  margin: 2rem 0;
   text-align: center;
 }
 
@@ -240,7 +240,7 @@ footer {
 
 .newgirl {
   background: url("../../assets/images/newgirl.jpg") no-repeat;
-  background-position: 50% 30%;
+  background-position: 90% 30%;
   background-size: cover;
 }
 
