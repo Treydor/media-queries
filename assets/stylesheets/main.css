@@ -24,7 +24,7 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
-header { padding: 2rem 1rem; }
+header { padding: 1.5rem 1rem; }
 
 footer {
   margin: 2rem 0;
@@ -35,7 +35,6 @@ footer {
 
 .page-title {
   color: #fff;
-  font-size: 1rem;
   font-weight: 700;
   line-height: 27px;
   text-transform: uppercase;
@@ -48,12 +47,10 @@ footer {
 
 .button {
   border: 1px solid #444;
+  border-radius: 6px;
   color: #444;
-  font-size: .8rem;
-  font-weight: 700;
   padding: .2rem .5rem;
   text-decoration: none;
-  text-transform: uppercase;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -79,12 +76,14 @@ footer {
 .show-all, .hide-all {
   cursor: pointer;
   float: left;
-  margin-left: .5rem;
+  font-size: .8rem;
+  margin-left: .8rem;
+  text-transform: uppercase;
 }
 
 .footer-link {
   display: inline-block;
-  font-size: 1rem;
+  font-size: .9rem;
   margin: 0 auto;
   padding: .5rem 1.5rem;
 }
@@ -102,6 +101,8 @@ footer {
   width: 100%;
 }
 
+.card:last-of-type { border-bottom: 0; }
+
 @media screen and (min-width: 560px) {
   .card {
     border-right: 1px solid #000;
@@ -112,9 +113,10 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
-  .card { width: 33.3%; }
+  .card { width: 33.33%; }
   .card:nth-child(2n) { border-right: 1px solid #000; }
   .card:nth-child(3n) { border-right: 0; }
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -126,8 +128,7 @@ footer {
 
 @media screen and (min-width: 1600px) {
   .card { width: 20%; }
-  .card:nth-child(2n), .card:nth-child(3n),
-  .card:nth-child(4n) { border-right: 1px solid #000; }
+  .card:nth-child(2n), .card:nth-child(3n), .card:nth-child(4n) { border-right: 1px solid #000; }
   .card:nth-child(5n) { border-right: 0; }
 }
 
