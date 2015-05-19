@@ -101,7 +101,7 @@ footer {
   .card:nth-child(2n) { border-right: 0; }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .card { width: 33.3%; }
   .card:nth-child(2n) { border-right: 1px solid #000; }
   .card:nth-child(3n) { border-right: 0; }
@@ -162,7 +162,7 @@ footer {
   color: #fff;
   display: none;
   font-size: .8rem;
-  margin-top: 1rem;
+  margin-top: .5rem;
   padding: 1rem;
 }
 
@@ -193,20 +193,20 @@ footer {
   content: " ➝";
 }
 
-.wow {
-  background: url("../../assets/images/wow.jpg") no-repeat;
-  background-position: 50% 10%;
+.dota {
+  background: url("../../assets/images/dota.jpg") no-repeat;
+  background-position: 50% 20%;
   background-size: cover;
 }
 
-.masseffect {
-  background: url("../../assets/images/masseffect.jpg") no-repeat;
+.dragonage {
+  background: url("../../assets/images/dragonage.jpg") no-repeat;
   background-position: 50% 0;
   background-size: cover;
 }
 
-.starwars {
-  background: url("../../assets/images/starwars.jpg") no-repeat;
+.gwtdt {
+  background: url("../../assets/images/gwtdt.jpg") no-repeat;
   background-position: 50% 20%;
   background-size: cover;
 }
@@ -217,15 +217,15 @@ footer {
   background-size: cover;
 }
 
-.gtav {
-  background: url("../../assets/images/gta.jpg") no-repeat;
-  background-position: 50% 10%;
+.masseffect {
+  background: url("../../assets/images/masseffect.jpg") no-repeat;
+  background-position: 50% 0;
   background-size: cover;
 }
 
-.dota {
-  background: url("../../assets/images/dota.jpg") no-repeat;
-  background-position: 50% 10%;
+.newgirl {
+  background: url("../../assets/images/newgirl.jpg") no-repeat;
+  background-position: 50% 30%;
   background-size: cover;
 }
 
@@ -235,15 +235,15 @@ footer {
   background-size: cover;
 }
 
-.gwtdt {
-  background: url("../../assets/images/gwtdt.jpg") no-repeat;
+.starwars {
+  background: url("../../assets/images/starwars.jpg") no-repeat;
   background-position: 50% 20%;
   background-size: cover;
 }
 
-.dragonage {
-  background: url("../../assets/images/dragonage.jpg") no-repeat;
-  background-position: 50% 0;
+.wow {
+  background: url("../../assets/images/wow.jpg") no-repeat;
+  background-position: 50% 20%;
   background-size: cover;
 }
 
