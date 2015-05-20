@@ -24,68 +24,44 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
-header { padding: 1.5rem 1rem; }
+header {
+  padding: 2rem 1rem;
+}
 
 footer {
   margin: 2rem 0;
   text-align: center;
 }
 
-.footer-box { text-align: center; }
-
 .page-title {
   color: #fff;
-  font-weight: 700;
-  line-height: 27px;
-  text-transform: uppercase;
+  float: left;
+  font-size: 1rem;
 }
 
 .page-title:before {
-  color: #ffb03b;
-  content: "★ ";
-}
-
-.button {
-  border: 1px solid #444;
-  border-radius: 6px;
-  color: #444;
-  padding: .2rem .5rem;
-  text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: border .3s ease, color .3s ease;
-  -moz-transition: border .3s ease, color .3s ease;
-  -o-transition: border .3s ease, color .3s ease;
-  transition: border .3s ease, color .3s ease;
-}
-
-.button:hover {
-  border: 1px solid #999;
-  color: #999;
+  color: #ffd54f;
+  content: "★ "
 }
 
 .project-nav {
   float: right;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
 .show-all, .hide-all {
+  color: #555;
   cursor: pointer;
-  float: left;
-  font-size: .8rem;
-  margin-left: .8rem;
-  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 1rem;
 }
 
 .footer-link {
+  color: #555;
   display: inline-block;
-  font-size: .9rem;
-  margin: 0 auto;
-  padding: .5rem 1.5rem;
+  text-decoration: none;
 }
 
 /* ==========================================
@@ -160,7 +136,7 @@ footer {
 
 .inner-title {
   background: rgba(0, 0, 0, 0.7);
-  color: #eee;
+  color: #fff;
   display: inline-block;
   font-size: .8rem;
   font-weight: 700;
@@ -169,7 +145,7 @@ footer {
 }
 
 .inner-title:before {
-  color: #ffb03b;
+  color: #ffd54f;
   content: "+ ";
 }
 
@@ -181,6 +157,8 @@ footer {
   margin-top: .5rem;
   padding: 1rem;
 }
+
+.show { display: block; }
 
 @media screen and (max-width: 559px) {
   .inner-description { font-size: .9rem; }
@@ -202,11 +180,17 @@ footer {
   transition: color .3s ease;
 }
 
-.inner a:hover { color: #ffb03b; }
+.inner a:hover { color: #ffd54f; }
 
 .inner-footer a:after {
-  color: #ffb03b;
+  color: #ffd54f;
   content: " ➝";
+}
+
+.project-info {
+  background: #455a64;
+  padding: 1rem;
+  width: 100%;
 }
 
 .dota {
@@ -267,7 +251,7 @@ footer {
    Clearfix
    ========================================== */
 
- .wrapper, .card-container, .description {
+ header .wrapper, .card-container, .description {
    clear: both;
    *zoom: 1;
  }
