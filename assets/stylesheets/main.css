@@ -89,30 +89,28 @@ p:last-child { margin-bottom: 0; }
 
 @media screen and (min-width: 560px) {
   .card {
-    border-right: 1px solid #000;
     float: left;
     width: 50%;
   }
-  .card:nth-child(odd) { border-right: 0; }
+  .card:nth-child(even) { border-right: 1px solid #000; }
 }
 
 @media screen and (min-width: 900px) {
   .card { width: 33.33%; }
   .card:nth-child(1n) { border-right: 1px solid #000; }
-  .card:first-child,
   .card:nth-child(3n+4) { border-right: 0; }
 }
 
 @media screen and (min-width: 1300px) {
   .card { width: 25%; }
   .card:nth-child(1n) { border-right: 1px solid #000; }
-  .card:nth-child(4n+5) { border-right: 0; }
+  .card:nth-child(4n+2) { border-right: 0; }
 }
 
 @media screen and (min-width: 1600px) {
   .card { width: 20%; }
   .card:nth-child(1n) { border-right: 1px solid #000; }
-  .card:nth-child(5n+6) { border-right: 0; }
+  .card:nth-child(5n+3) { border-right: 0; }
 }
 
 .card-overlay {
