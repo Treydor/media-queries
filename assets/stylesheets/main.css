@@ -51,7 +51,7 @@ p:last-child { margin-bottom: 0; }
 
 .page-title:before {
   color: #ffd54f;
-  content: "★";
+  content: "★ ";
 }
 
 .project-nav {
@@ -99,6 +99,7 @@ p:last-child { margin-bottom: 0; }
 @media screen and (min-width: 900px) {
   .card { width: 33.33%; }
   .card:nth-child(1n) { border-right: 1px solid #000; }
+  .card:first-child,
   .card:nth-child(3n+4) { border-right: 0; }
 }
 
@@ -113,8 +114,6 @@ p:last-child { margin-bottom: 0; }
   .card:nth-child(1n) { border-right: 1px solid #000; }
   .card:nth-child(5n+6) { border-right: 0; }
 }
-
-.card:first-child, .card:last-child { border-right: 0; }
 
 .card-overlay {
   background: rgba(0, 0, 0, 0.3);
@@ -200,8 +199,11 @@ p:last-child { margin-bottom: 0; }
 
 @media screen and (min-width: 1300px) {
   .project-info {
+    border-bottom: 0;
+    border-right: 1px solid yellow;
     height: 260px;
-    width: 75%; }
+    width: 75%;
+  }
 }
 
 @media screen and (min-width: 1600px) {
