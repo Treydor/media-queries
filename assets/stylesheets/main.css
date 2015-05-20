@@ -137,7 +137,6 @@ p:last-child { margin-bottom: 0; }
 
 @media screen and (max-width: 559px) {
   .inner { padding: 2rem 1rem; }
-  .project-info .inner { padding: 1rem; }
 }
 
 .inner-title {
