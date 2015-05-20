@@ -1,5 +1,5 @@
 /* ==========================================
-   Basic page elements
+   Page Elements
    ========================================== */
 
 *, *:before, *:after {
@@ -19,17 +19,29 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-}
-
 header { padding: 2rem 1rem; }
 
 footer {
   margin: 2rem 0;
   text-align: center;
 }
+
+/* ==========================================
+   Basic Typography
+   ========================================== */
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+p { margin: 0 0 1rem 0; }
+
+p:last-child { margin-bottom: 0; }
+
+/* ==========================================
+   Project
+   ========================================== */
 
 .page-title {
   color: #fff;
@@ -39,7 +51,7 @@ footer {
 
 .page-title:before {
   color: #ffd54f;
-  content: "★ "
+  content: "★";
 }
 
 .project-nav {
@@ -62,9 +74,7 @@ footer {
   text-decoration: none;
 }
 
-/* ==========================================
-   Grid
-   ========================================== */
+/* ----- Responsive Grid ----- */
 
 .wrapper { width: 100%; }
 
@@ -83,28 +93,28 @@ footer {
     float: left;
     width: 50%;
   }
-  .card:nth-child(2n) { border-right: 0; }
+  .card:nth-child(odd) { border-right: 0; }
 }
 
 @media screen and (min-width: 900px) {
   .card { width: 33.33%; }
-  .card:nth-child(2n) { border-right: 1px solid #000; }
-  .card:nth-child(3n) { border-right: 0; }
-
+  .card:nth-child(1n) { border-right: 1px solid #000; }
+  .card:nth-child(3n+4) { border-right: 0; }
 }
 
 @media screen and (min-width: 1300px) {
   .card { width: 25%; }
-  .card:nth-child(2n),
-  .card:nth-child(3n) { border-right: 1px solid #000; }
-  .card:nth-child(4n) { border-right: 0; }
+  .card:nth-child(1n) { border-right: 1px solid #000; }
+  .card:nth-child(4n+5) { border-right: 0; }
 }
 
 @media screen and (min-width: 1600px) {
   .card { width: 20%; }
-  .card:nth-child(2n), .card:nth-child(3n), .card:nth-child(4n) { border-right: 1px solid #000; }
-  .card:nth-child(5n) { border-right: 0; }
+  .card:nth-child(1n) { border-right: 1px solid #000; }
+  .card:nth-child(5n+6) { border-right: 0; }
 }
+
+.card:first-child, .card:last-child { border-right: 0; }
 
 .card-overlay {
   background: rgba(0, 0, 0, 0.3);
@@ -130,6 +140,7 @@ footer {
 
 @media screen and (max-width: 559px) {
   .inner { padding: 2rem 1rem; }
+  .project-info .inner { padding: 1rem; }
 }
 
 .inner-title {
@@ -152,15 +163,13 @@ footer {
   color: #fff;
   display: none;
   font-size: .8rem;
-  margin-top: .5rem;
+  margin-top: 1rem;
   padding: 1rem;
 }
 
 @media screen and (max-width: 559px) {
   .inner-description { font-size: .9rem; }
 }
-
-.card-overlay:target .inner-description { display: block; }
 
 .inner-footer { margin-top: 1rem; }
 
@@ -178,10 +187,49 @@ footer {
 
 .inner a:hover { color: #ffd54f; }
 
-.inner-footer a:after {
+.inner-footer a:before {
   color: #ffd54f;
-  content: " ➝";
+  content: "» ";
 }
+
+.project-info {
+  background: #333;
+  height: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1300px) {
+  .project-info {
+    height: 260px;
+    width: 75%; }
+}
+
+@media screen and (min-width: 1600px) {
+  .project-info { width: 60%; }
+}
+
+.project-info .card-overlay { height: auto; }
+
+@media screen and (min-width: 1300px) {
+  .project-info .card-overlay { height: 260px; }
+}
+
+.project-info .inner-description {
+  display: block;
+  font-size: .9rem;
+}
+
+.close {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: inline-block;
+  float: right;
+  font-size: .8rem;
+  font-weight: 700;
+  padding: .2rem .5rem;
+}
+
+/* ----- Cards ----- */
 
 .dota {
   background: url("../../assets/images/dota.jpg") no-repeat;

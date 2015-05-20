@@ -17,6 +17,9 @@
       $(".hide-all").click(function(){
         $(".inner-description").slideUp();
       });
+      $(".project-info").click(function(){
+        $(".project-info .inner-description").slideToggle();
+      });
       $(".dota").click(function(){
         $(".dota .inner-description").slideToggle();
       });
@@ -43,6 +46,9 @@
       });
       $(".wow").click(function(){
         $(".wow .inner-description").slideToggle();
+      });
+      $( ".close" ).click(function() {
+        $( ".project-info.card" ).remove();
       });
     });
   </script>
