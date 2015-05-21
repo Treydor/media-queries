@@ -190,6 +190,8 @@ p:last-child { margin-bottom: 0; }
 
 .featured { width: 100%; }
 
+.featured .inner-description { display: block; }
+
 @media screen and (min-width: 900px) {
   .featured { width: 66.66%; }
 }
@@ -262,13 +264,12 @@ p:last-child { margin-bottom: 0; }
    Clearfix
    ========================================== */
 
- header .wrapper, .card-container, .description {
+.wrapper {
    clear: both;
    *zoom: 1;
  }
 
-.wrapper:before, .card-container:before,
-.wrapper:after, .card-container:after {
+.wrapper:before, .wrapper:after {
   clear: both;
   content: " ";
   display: table;
