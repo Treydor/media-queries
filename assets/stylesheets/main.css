@@ -19,12 +19,14 @@ body {
   margin: 0;
 }
 
-header { padding: 2rem 1rem; }
+header { padding: 1rem; }
 
 footer {
   margin: 2rem 0;
   text-align: center;
 }
+
+.wrapper { width: 100%; }
 
 /* ==========================================
    Basic Typography
@@ -34,6 +36,8 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
+
+h1 { font-size: 1.5rem; }
 
 p { margin: 0 0 1rem 0; }
 
@@ -46,35 +50,38 @@ p:last-child { margin-bottom: 0; }
 .page-title {
   color: #fff;
   float: left;
-  font-size: 1rem;
-}
-
-.page-title:before {
-  color: #ffd54f;
-  content: "★ ";
+  font-weight: 300;
 }
 
 .project-nav {
-  float: right;
   list-style: none;
   margin: 0 auto;
   padding: 0;
 }
 
-.show-all, .hide-all {
-  color: #555;
+.show-all, .hide-all, .footer-link {
+  color: #333;
   cursor: pointer;
-  display: inline-block;
+  float: right;
+  font-size: .9rem;
+  line-height: 2.3rem;
   margin-left: 1rem;
+  -webkit-transition: color .3s ease;
+  -moz-transition: color .3s ease;
+  -o-transition: color .3s ease;
+  transition: color .3s ease;
 }
 
 .footer-link {
-  color: #555;
-  display: inline-block;
+  float: none;
+  font-size: 1rem;
+  margin: 0;
   text-decoration: none;
 }
 
-.wrapper { width: 100%; }
+.show-all:hover, .hide-all:hover, .footer-link:hover {
+  color: #666;
+}
 
 .card {
   border-bottom: 1px solid #000;
@@ -149,7 +156,8 @@ p:last-child { margin-bottom: 0; }
 
 .inner-title:before {
   color: #ffd54f;
-  content: "+ ";
+  content: "+";
+  margin-right: .3rem;
 }
 
 .inner-description {
@@ -165,10 +173,8 @@ p:last-child { margin-bottom: 0; }
 
 .inner-footer a {
   color: #fff;
-  font-size: .8rem;
   font-weight: 700;
   text-decoration: none;
-  text-transform: uppercase;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
   -o-transition: color .3s ease;
@@ -179,7 +185,10 @@ p:last-child { margin-bottom: 0; }
 
 .inner-footer a:before {
   color: #ffd54f;
-  content: "» ";
+  content: "\f0ac";
+  font-family: FontAwesome;
+  font-weight: 400;
+  margin-right: .5rem;
 }
 
 .featured { width: 100%; }
