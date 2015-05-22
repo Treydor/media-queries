@@ -11,38 +11,19 @@
 
   <script>
     $(document).ready(function(){
-      $(".show-all").click(function(){
-        $(".inner-description").slideDown();
+      $('[data-function="card-toggle"]').click(function(event) {
+        var card = $(event.target).find('[data-function="card"]');
+        card.slideToggle();
       });
-      $(".hide-all").click(function(){
-        $(".inner-description").slideUp();
+
+      $('[data-function="cards-hide-all"]').click(function() {
+        var cards = $('body').find('[data-function="card"]');
+        cards.slideUp();
       });
-      $(".dota").click(function(){
-        $(".dota .inner-description").slideToggle();
-      });
-      $(".dragonage").click(function(){
-        $(".dragonage .inner-description").slideToggle();
-      });
-      $(".gwtdt").click(function(){
-        $(".gwtdt .inner-description").slideToggle();
-      });
-      $(".got").click(function(){
-        $(".got .inner-description").slideToggle();
-      });
-      $(".masseffect").click(function(){
-        $(".masseffect .inner-description").slideToggle();
-      });
-      $(".newgirl").click(function(){
-        $(".newgirl .inner-description").slideToggle();
-      });
-      $(".siliconvalley").click(function(){
-        $(".siliconvalley .inner-description").slideToggle();
-      });
-      $(".starwars").click(function(){
-        $(".starwars .inner-description").slideToggle();
-      });
-      $(".wow").click(function(){
-        $(".wow .inner-description").slideToggle();
+
+      $('[data-function="cards-show-all"]').click(function() {
+        var cards = $('body').find('[data-function="card"]');
+        cards.slideDown();
       });
     });
   </script>
