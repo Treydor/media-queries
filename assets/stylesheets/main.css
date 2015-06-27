@@ -19,12 +19,7 @@ body {
   margin: 0;
 }
 
-header { padding: 1rem; }
-
-footer {
-  margin: 2rem 0;
-  text-align: center;
-}
+header { padding: 1.5rem; }
 
 .wrapper { width: 100%; }
 
@@ -50,6 +45,7 @@ p:last-child { margin-bottom: 0; }
 .page-title {
   color: #fff;
   float: left;
+  font-size: 1.6rem;
   font-weight: 300;
 }
 
@@ -59,28 +55,24 @@ p:last-child { margin-bottom: 0; }
   padding: 0;
 }
 
-.show-all, .hide-all, .footer-link {
-  color: #333;
+.show-all, .hide-all {
+  color: #777;
   cursor: pointer;
   float: right;
-  font-size: .9rem;
-  line-height: 2.3rem;
-  margin-left: 1rem;
-  -webkit-transition: color .3s ease;
-  -moz-transition: color .3s ease;
-  -o-transition: color .3s ease;
-  transition: color .3s ease;
+  padding-top: .5rem;
+  -webkit-transition: background .3s ease;
+  -moz-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease;
 }
+
+.show-all { margin-left: 1.5rem; }
 
 .footer-link {
+  display: block;
+  color: #fff;
   float: none;
-  font-size: 1rem;
-  margin: 0;
   text-decoration: none;
-}
-
-.show-all:hover, .hide-all:hover, .footer-link:hover {
-  color: #666;
 }
 
 .card {
